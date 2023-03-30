@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "8ad5af6e-6d58-4618-8eb4-4f3b42fe4355",
+		"name": "express.homework.01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26655096"
+	},
+	"item": [
+		{
+			"name": "Get all trainers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add trainer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\": \"Dani\",\r\n\"lastName\": \"Arsovska\",\r\n\"email\": \"dani.gajdata@zver.com\",\r\n\"timeEmployed\": \"10 week\",\r\n\"coursesFinished\": 10}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update trainer",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"isCurrentlyTeaching\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers/4cf0a9dc-2215-4659-84a8-aa1e3092a894",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						"4cf0a9dc-2215-4659-84a8-aa1e3092a894"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trainer by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers/4cf0a9dc-2215-4659-84a8-aa1e3092a894",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						"4cf0a9dc-2215-4659-84a8-aa1e3092a894"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete trainer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trainers/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

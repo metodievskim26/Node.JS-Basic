@@ -1,0 +1,24 @@
+[
+  {
+    "id": "123",
+    "name": "Mario"
+  },
+  {
+    "id": "51dc5b30-7618-47b2-889d-28a4950d7e04",
+    "firstName": "Petre",
+    "lastName": "Arsovski",
+    "email": "petre.gajdata@idiot.com",
+    "isCurrentlyTeaching": false,
+    "timeEmployed": "1 week",
+    "coursesFinished": 1
+  },
+  {
+    "id": "4cf0a9dc-2215-4659-84a8-aa1e3092a894",
+    "firstName": "Dani",
+    "lastName": "Arsovska",
+    "email": "dani.gajdata@zver.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "10 week",
+    "coursesFinished": 10
+  }
+]
